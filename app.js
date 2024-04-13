@@ -131,5 +131,17 @@
 //     console.log("You can do whatever you want.");
 // }
 
+// document = HTML
+// document.title = 'Hello! From HTML!';
 
-document.title = 'Hello! From HTML!';
+// HTML에서 id="title"을 추가했고
+// JS에서 getElementById라는 함수를 사용했기 때문에 웹에서 수정 가능
+document.title = document.getElementById("title");
+// console.log(title);
+// console.dir(title);
+
+title.innerText = "Got you!";
+console.log(title);
+console.log(title.innerText);
+console.log(title.id);
+console.log(title.className);

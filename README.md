@@ -81,3 +81,16 @@ document.querySelector(".hello h1")
 - 같은 element가 여러 개 있으면 제일 처음 element만 가지고 옴
 
 `querySelectorAll()` 조건에 맞는 모든 element의 array를 가지고 옴
+
+`handleTitleClick()` 클릭하면 함수 실행
+
+`addEventListener()` event가 발생하도록 적용
+
+```javascript
+title.addEventListener("click", handleTitleClick);
+```
+click : 발생할 이벤트  
+handleTitleClick : 이벤트가 발생하면 적용할 함수
+- click하면 JS가 handleTitleClick 함수를 대신 실행해줄거야
+
+listen? 어떤 함수를 적용할거야?

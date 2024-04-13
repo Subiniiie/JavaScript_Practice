@@ -82,8 +82,6 @@ document.querySelector(".hello h1")
 
 `querySelectorAll()` 조건에 맞는 모든 element의 array를 가지고 옴
 
-`handleTitleClick()` 클릭하면 함수 실행
-
 `addEventListener()` event가 발생하도록 적용
 
 ```javascript
@@ -94,3 +92,8 @@ handleTitleClick : 이벤트가 발생하면 적용할 함수
 - click하면 JS가 handleTitleClick 함수를 대신 실행해줄거야
 
 listen? 어떤 함수를 적용할거야?
+
+console.dir()로 검색했을 때 앞에 `on`이 붙어있다면 event로 사용 가능  
+사용할 땐 `on` 생략
+
+MDN에서 event 목록 볼 수 있음

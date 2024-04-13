@@ -159,5 +159,25 @@
 // console.log(title);
 
 
-const title = document.querySelectorAll(".hello h1");
-console.log(title);
+// const title = document.querySelectorAll(".hello h1");
+// console.log(title);
+
+// const title = document.querySelector(".hello h1");
+// title.innerText = "Hello";
+// console.log(title);
+// console.dir(title);
+
+// title.style.color = 'blue';
+
+const title = document.querySelector(".hello h1");
+
+function handleTitleClick() {
+    console.log("title was clicked!");
+}
+
+
+
+
+title.addEventListener("click", handleTitleClick);
+
+

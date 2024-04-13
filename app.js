@@ -177,23 +177,23 @@
 
 // title.addEventListener("click", handleTitleClick);
 
-const h1 = document.querySelector(".hello h1");
+// const h1 = document.querySelector(".hello h1");
 
-function handleTitleClick() {
-    h1.style.color = "blue";
-}
+// function handleTitleClick() {
+//     h1.style.color = "blue";
+// }
 
-function handleMouseEnter() {
-    h1.innerText = "Mouse is here!"
-}
+// function handleMouseEnter() {
+//     h1.innerText = "Mouse is here!"
+// }
 
-function handleMouseLeave() {
-    h1.innerText = "Mouse is gone!";
-}
+// function handleMouseLeave() {
+//     h1.innerText = "Mouse is gone!";
+// }
 
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
+// h1.addEventListener("click", handleTitleClick);
+// h1.addEventListener("mouseenter", handleMouseEnter);
+// h1.addEventListener("mouseleave", handleMouseLeave);
 
 // 같은 방법
 // h1.onclick = handleh1Click;
@@ -203,26 +203,59 @@ h1.addEventListener("mouseleave", handleMouseLeave);
 // console.dir(h1);
 
 
-function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
+// function handleWindowResize() {
+//     document.body.style.backgroundColor = "tomato";
+// }
+
+
+// function handleWindowCopy() {
+//     alert("copier!");
+// }
+
+// function handleWindowOffline() {
+//     alert("SOS no WIFI");
+// }
+
+// function handleWindowOnline() {
+//     alert("ALL GOOOOOOOD");
+// }
+
+
+
+// window.addEventListener("resize", handleWindowResize);
+// window.addEventListener("copy", handleWindowCopy);
+// window.addEventListener("offline", handleWindowOffline);
+// window.addEventListener("online", handleWindowOnline);
+
+
+const h1 = document.querySelector(".hello h1");
+
+// function handleTitleClick() {
+//     console.log(h1.style.color);
+//     h1.style.color = "blue";
+//     console.log(h1.style.color);
+// }
+
+
+// function handleTitleClick() {
+//     if (h1.style.color === "blue") {
+//         h1.style.color = "tomato";
+//     } else {
+//         h1.style.color = "blue";
+//     }
+// }
+
+
+function handleTitleClick() {
+    const currentColor = h1.style.color;
+    let newColor;
+    if (currentColor === "blue") {
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
 }
 
 
-function handleWindowCopy() {
-    alert("copier!");
-}
-
-function handleWindowOffline() {
-    alert("SOS no WIFI");
-}
-
-function handleWindowOnline() {
-    alert("ALL GOOOOOOOD");
-}
-
-
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+h1.addEventListener("click", handleTitleClick);

@@ -102,13 +102,34 @@
 // console.log(age);
 
 
-const age = parseInt(prompt("How old are you?"));
+// const age = parseInt(prompt("How old are you?"));
 // false가 나오면 age가 NaN인 것이 아니라는 뜻 = age는 숫자라는 뜻
 // true가 나오면 age가 NaN이라는 뜻 = age가 숫자가 아니라는 뜻
 // console.log(isNaN(age));
 
-if(isNaN(age)){
-    console.log("Please write a number.");
-} else {
-    console.log("You can accept.");
-}
+
+// if(isNaN(age)){
+//     console.log("Please wrtie a number.");
+// } else if (age < 18) {
+//     console.log("You are too young.");
+// } else {
+//     console.log("You can drink.");
+// }
+
+
+// if(isNaN(age) || age < 0) {
+//     console.log("Please write a real positive number.");
+// } else if (age < 18) {
+//     console.log("You are too young.");
+// } else if (age >= 18 && age <= 50) {
+//     console.log("You can drink.");
+// } else if (age > 50 && age <= 80) {
+//     console.log("You should exercise.");
+// } else if (age === 100) {
+//     console.log("wow you are wise.");
+// } else if (age > 80) {
+//     console.log("You can do whatever you want.");
+// }
+
+
+document.title = 'Hello! From HTML!';

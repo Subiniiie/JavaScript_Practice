@@ -89,9 +89,26 @@
 // const powerResult = calculator.power(divideResult, 2);
 
 
-const age = prompt("How old are you?");
+// const age = prompt("How old are you?");
 
-// parseInt("15")
+// // parseInt("15")
 
 
-console.log(age, parseInt(age));
+// console.log(age, parseInt(age));
+
+
+// const age = parseInt(prompt("How old are you?"));
+
+// console.log(age);
+
+
+const age = parseInt(prompt("How old are you?"));
+// false가 나오면 age가 NaN인 것이 아니라는 뜻 = age는 숫자라는 뜻
+// true가 나오면 age가 NaN이라는 뜻 = age가 숫자가 아니라는 뜻
+// console.log(isNaN(age));
+
+if(isNaN(age)){
+    console.log("Please write a number.");
+} else {
+    console.log("You can accept.");
+}

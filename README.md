@@ -63,3 +63,21 @@ console.log(title.id);
 console.log(title.className);
 ```
 설정되어 있는 것만 가지고 올 수 있음
+
+
+`getElementByClassName()` 
+- 많은 element를 한번에 가지고 와야하는 경우
+- 가져올 element의 className을 동일하게 정의
+
+`getElementByTagName()` 
+- Tag로 가지고 옴
+- div, h1 등
+
+`querySelector()` element를 CSS방식으로 검색할 수 있음
+```javascript
+document.querySelector(".hello h1")
+```
+- hello 클래스 안에 있는 h1 태그를 가지고 올 수 있음
+- 같은 element가 여러 개 있으면 제일 처음 element만 가지고 옴
+
+`querySelectorAll()` 조건에 맞는 모든 element의 array를 가지고 옴

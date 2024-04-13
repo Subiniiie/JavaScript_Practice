@@ -136,12 +136,28 @@
 
 // HTML에서 id="title"을 추가했고
 // JS에서 getElementById라는 함수를 사용했기 때문에 웹에서 수정 가능
-document.title = document.getElementById("title");
-// console.log(title);
-// console.dir(title);
+// document.title = document.getElementById("title");
+// // console.log(title);
+// // console.dir(title);
 
-title.innerText = "Got you!";
+// title.innerText = "Got you!";
+// console.log(title);
+// console.log(title.innerText);
+// console.log(title.id);
+// console.log(title.className);
+
+
+// const title = document.getElementById("somthing");
+// title.innerText = "Got you!";
+// console.log(title.className);
+
+// const hello = document.getElementsByClassName("hellos");
+// console.log(hello);
+
+
+// const title = document.getElementsByTagName("h1");
+// console.log(title);
+
+
+const title = document.querySelectorAll(".hello h1");
 console.log(title);
-console.log(title.innerText);
-console.log(title.id);
-console.log(title.className);

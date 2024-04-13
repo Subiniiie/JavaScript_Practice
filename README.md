@@ -97,3 +97,20 @@ console.dir()로 검색했을 때 앞에 `on`이 붙어있다면 event로 사용
 사용할 땐 `on` 생략
 
 MDN에서 event 목록 볼 수 있음
+
+
+`placeholder` text 입력 칸 안에 글자를 넣음
+
+`const loginForm = document.querySelector("#login-form");`
+querySelector()로는 classname, tagname이 모두 검색 가능하므로  
+id라는 것을 표시해줘야함
+`const loginForm = document.getElementById("login-form);`
+getElementById를 사용할 때는 id를 찾고 있다는 것을 이미 알고 있기 때문에  
+따로 표시할 필요가 없음
+
+- 길이 구하는 방법
+```javascript
+const hello = "lalalalala"
+hello.length
+// 10
+```

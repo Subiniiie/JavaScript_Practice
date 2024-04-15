@@ -1,16 +1,12 @@
- const loginForm = document.querySelector("#login-form");
- const loginInput = document.querySelector("#login-form input");
- const loginButton = document.querySelector("#login-form button");
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
+const greeting = document.querySelector('#greeting');
 
- const link = document.querySelector("a");
+const link = document.querySelector("a");
+link.addEventListener("click", handleLinkClick);
 
-
-function onLoginSubmit(event) {
-    event.preventDefault();
-    console.log(loginInput.value);
-}
-
-function handleKinkClick(event) {
+function handleLinkClick(event) {
     // 기본 동작을 막음
     // "a"의 기본 동작 = 클릭하면 링크 이동
     event.preventDefault();
@@ -18,5 +14,33 @@ function handleKinkClick(event) {
     alert("clicked!");
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleKinkClick);
+
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    // USERNAME_KEY = key
+    // username = const username으로 만든 value
+    localStorage.setItem(USERNAME_KEY, username);
+    // 같은 값 출력
+    // greeting.innerText = "Hello " + username;
+    paintGreetings(username);
+}
+
+function paintGreetings(username) {
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);    
+}
+
+if (savedUsername === null) {
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+    paintGreetings(savedUsername);
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+}

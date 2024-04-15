@@ -116,3 +116,5 @@ hello.length
 ```
 
 `event.preventDefault()` 기본 동작을 막음
+
+`쓰고 싶은 말 ${변수}` -> 출력 가능

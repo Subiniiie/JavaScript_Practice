@@ -2,16 +2,21 @@
  const loginInput = document.querySelector("#login-form input");
  const loginButton = document.querySelector("#login-form button");
 
+ const link = document.querySelector("a");
 
-function handleLoginBtnClick() {
-    const username = loginInput.value;
-   if (username === "") {
-    alert("Please write Your name.");
-   } else if (username.length > 15) {
-    alert("Your name is too long!");
-   }
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+    console.log(loginInput.value);
 }
 
+function handleKinkClick(event) {
+    // 기본 동작을 막음
+    // "a"의 기본 동작 = 클릭하면 링크 이동
+    event.preventDefault();
+    console.dir(event)
+    alert("clicked!");
+}
 
-
-loginButton.addEventListener("click", handleLoginBtnClick);
+loginForm.addEventListener("submit", onLoginSubmit);
+link.addEventListener("click", handleKinkClick);

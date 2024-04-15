@@ -114,3 +114,5 @@ const hello = "lalalalala"
 hello.length
 // 10
 ```
+
+`event.preventDefault()` 기본 동작을 막음

@@ -122,3 +122,10 @@ hello.length
 
 `setInterval(함수, ms단위)` ms단위 시간마다 함수가 반복 실행
 `setTimeout(함수, ms단위)` ms단위 후에 함수가 실행
+
+`padStart()` 
+  - str에 쓸 수 있는 함수
+  - 제일 앞에 추가
+`padEnd()`
+  - str에 쓸 수 있는 함수
+  - 제일 뒤에 추가

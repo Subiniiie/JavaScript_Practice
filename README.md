@@ -118,3 +118,7 @@ hello.length
 `event.preventDefault()` 기본 동작을 막음
 
 `쓰고 싶은 말 ${변수}` -> 출력 가능
+
+
+`setInterval(함수, ms단위)` ms단위 시간마다 함수가 반복 실행
+`setTimeout(함수, ms단위)` ms단위 후에 함수가 실행

@@ -129,3 +129,10 @@ hello.length
 `padEnd()`
   - str에 쓸 수 있는 함수
   - 제일 뒤에 추가
+
+`Math.round(숫자)` 반올림
+`Math,ceil(숫자)` 올림
+`Math.floor(숫자)` 내림
+
+자스에서 길이 구하는 방법
+`길이 구하고 싶은 데이터.length`

@@ -134,5 +134,8 @@ hello.length
 `Math,ceil(숫자)` 올림
 `Math.floor(숫자)` 내림
 
-자스에서 길이 구하는 방법
+JS에서 길이 구하는 방법
 `길이 구하고 싶은 데이터.length`
+
+`forEach`  
+배열이 있으면 각각의 item을 살펴봄? 실행함? 적용함?

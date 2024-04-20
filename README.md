@@ -139,3 +139,37 @@ JS에서 길이 구하는 방법
 
 `forEach`  
 배열이 있으면 각각의 item을 살펴봄? 실행함? 적용함?
+
+`filter`
+- forEach랑 비슷
+- 입력된 배열에 있는 값을 하나씩 살펴보면서 그 값이 true면 남아있고 false면 삭제
+- 예시1
+  ```javascript
+  function sexyFilter() {
+    return true
+  }
+
+  [1, 2, 3, 4, 5].filter(sexyFilter)
+  ```
+  --> [1, 2, 3, 4, 5]
+- 예시2
+  ```javascript
+  const arr = [1234, 5454, 223, 122, 45, 6775, 334]
+
+  function sexyFilter(num) {
+    return num <= 1000
+  }
+
+  arr.filter(sexyFilter)  
+  ```
+  --> [223, 122, 45, 334]
+  ```javascript
+  const arr = ["tomato", "banana","kiwi"]
+
+  function sexyFilter(food) {
+    return food !== "banana"
+  }
+
+  const newArr = arr.filter(sexyFilter)
+  ```
+  --> ["tomato", "kiwi"]

@@ -4,6 +4,8 @@ const toDoList = document.getElementById("todo-list")
 
 const TODOS_KEY = "todos"
 
+const BUTTON_NAME = "button-name"
+
 
 let toDos = []
 
@@ -23,10 +25,14 @@ function paintTodo(newTodoObj) {
     li.id = newTodoObj.id
     const span = document.createElement("span")
     span.innerText = newTodoObj.text
+    const blank = document.createElement("span")
+    blank.innerText = " "
     const button = document.createElement("button")
+    button.className = BUTTON_NAME
     button.innerText = "❌"
     button.addEventListener("click", deleteTodo)
     li.appendChild(span)
+    li.appendChild(blank)
     li.appendChild(button)
     toDoList.appendChild(li)
 }

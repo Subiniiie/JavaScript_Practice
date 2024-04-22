@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title>Momentum App</title>
 </head>
 <body>
@@ -11,27 +14,28 @@
         <input required
             maxlength="15"
             type="text" 
-            placeholder="What is your name?"
+            placeholder="이름을 입력해주세요."
         />
         <button>Log In</button>
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <a href="https://nomadcoders.co">Go to courses</a>
-    <h2 id="clock">00:00:00</h2>
+    <a href="https://nomadcoders.co" class="link-font">Go to courses</a>
+    <h2 id="clock" class="clock-font">00:00:00</h2>
     <form id="todo-form" >
-        <input type="text" placeholder="Write a To Do and Press Enter." required>
+        <input type="text" placeholder="할 일을 적어주세요." required>
     </form>
     <ul id="todo-list">
     </ul>
-    <div id="quote">
+    <div id="quote" class="quote-font">
         <span></span>
         <span></span>
     </div>
-    <div id="weather">
+    <div id="weather" class="weather-font">
         <span></span>
         <span></span>
         <span></span>
     </div>
+    <div class="backgroud-cover"></div>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>

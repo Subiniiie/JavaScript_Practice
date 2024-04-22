@@ -1,3 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .hidden {
   display: none;
+}
+
+.background {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-cover {
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+body {
+  margin: 0 auto;
+}
+
+/* 리스트 스타일 변경 */
+li::marker {
+  content: "🌸 ";
+}
+
+#login-form input {
+  width: 150px;
+  height: 25px;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+}
+
+#todo-form input {
+  width: 400px;
+  height: 25px;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+}
+
+/* 클래스 이름 왜 이렇게 주는지 이해하기 */
+.button-name {
+  border: none;
+  /* 배경색깔 투명하게 나옴 */
+  background-color: transparent;
+}
+
+/* 커서 올리면 배경색 생김*/
+.button-name:hover {
+  border: none;
+  background-color: #5a5a5a;
+}
+
+#todo-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15;
+  color: whitesmoke;
+  opacity: 60%;
+}
+
+#todo-list {
+  font-family: "Nanum Gothic Coding", monospace;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: left;
+  font-size: 25px;
+  color: whitesmoke;
+  opacity: 60;
+}
+
+#login-form {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: traslate(50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 15px;
+  color: whitesmoke;
+  opacity: 60;
+}
+
+/* 폰트 조정 어케함? */
+#greeting {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 30px;
+  color:whitesmoke;
+  opacity: 60%;
+}
+
+.clock-font {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 130px;
+  color: whitesmoke;
+  opacity: 60%;
+}
+
+.quote-font {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+  opacity: 60%;
+
+}
+
+.weather-font {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: 15px;
+  font-size: 15px;
+  color: whitesmoke;
+  opacity: 60%;
+}
+
+.link-font {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: 15px;
+  font-size: 15px;
+  color: whitesmoke;
+  opacity: 60%;
 }
